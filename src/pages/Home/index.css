@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Helvetica", "Arial", sans-serif;
+}
+
+body {
+  background-color: #f2f2f7;
+  color: #1c1c1e;
+  line-height: 1.5;
+}
+
+.app {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #1d1d1f;
+}
+
+p {
+  font-size: 1rem;
+  color: #86868b;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d2d2d7;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: #0071e3;
+}
+
+button {
+  background-color: #0071e3;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0077ed;
+}
+
+.add {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.list {
+  margin-top: 2rem;
+}
+
+.item {
+  background-color: #f5f5f7;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.item span:first-child {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.item span:last-child {
+  font-size: 0.875rem;
+  color: #86868b;
+}
+
+.remove {
+  background-color: #ff3b30;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.remove:hover {
+  background-color: #ff453a;
+}
+
+@media (max-width: 600px) {
+  .app {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
